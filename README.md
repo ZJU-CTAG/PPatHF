@@ -29,6 +29,9 @@ We collect Neovim patches ported from Vim to investigate the necessities of patc
 
 
 ## Dataset
+
+**NOTE:** Please dowload the data from [here](https://drive.google.com/drive/folders/15cHr1s7B3ldL7hPC5Hw1fkSYYYdbfVLP?usp=sharing)
+
 * `vim_neovim_test_all.json`: the collected 310 patches ported from Vim to Neovim, used as the test set in our evaluations. 
 Note that we only use patches ported after 2022-07-01 (the date when the pretrain corpus of StarCoder is collected) for evaluation to avoid possible leakage of the test data
 
@@ -99,7 +102,6 @@ There are basically two directories corresponding to the reduction module (`redu
   * `test.py`: evaluate the patch porting performance
   * `test_tools.py`: tools (wrappers of the methods in `test.py`) to conveniently run tests in batch and get the formatted results (write into excel files)
   * `metrics.py`: calculate metrics including accuracy (exact_match), AED, and RED
-  * `metric_utils.py`: utilities that support metric calculation
   * `utils.py`: util functions such as buiding test sets
 
 
