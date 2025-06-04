@@ -92,6 +92,8 @@ There are basically two directories corresponding to the reduction module (`redu
       * `fcu.py`: utilities for parsing and analyzing functions using treesitter
       * `reducer.py`: implementation of the reduction module
       * `reducerConfig.py`: config file of the reduction module
+      * `main.py`: main entrance to run the reduction module to reduce (func_before_source, func_after_source, func_before_target)
+      * `run.sh`: script to run the reduction module in parallel
 
   * `porting/`: 
     * `data.py`: data utilities for the LLM, e.g., dataloader, tokenization
@@ -106,6 +108,11 @@ There are basically two directories corresponding to the reduction module (`redu
 
 
 ## Training & Evaluation
+
+### Run Reduction Module
+
+To run the reduction module to reduce (func_before_source, func_after_source, func_before_target), set `reducing_input_file` (the path of the dataset to be reduced) and `reducing_output_path` (the output path) in `reducerConfig.py`, and run `bash reduction/run.sh`.
+
 
 ### Run Finetuning
 
